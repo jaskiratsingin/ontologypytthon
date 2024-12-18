@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ex="http://example.org#">
+
+  <!-- Superclass for Operation -->
+  <rdf:Description rdf:about="http://example.org#Operation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Operation</rdfs:label>
+  </rdf:Description>
+
+  <!-- Subclass Addition -->
+  <rdf:Description rdf:about="http://example.org#Addition">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Addition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Subtraction -->
+  <rdf:Description rdf:about="http://example.org#Subtraction">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Subtraction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Multiplication -->
+  <rdf:Description rdf:about="http://example.org#Multiplication">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Multiplication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Division -->
+  <rdf:Description rdf:about="http://example.org#Division">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Division</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Logarithm -->
+  <rdf:Description rdf:about="http://example.org#Logarithm">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Logarithm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Factorial -->
+  <rdf:Description rdf:about="http://example.org#Factorial">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Factorial</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Power of 2 -->
+  <rdf:Description rdf:about="http://example.org#PowerOf2">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Power of 2</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Absolute Value -->
+  <rdf:Description rdf:about="http://example.org#AbsoluteValue">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Absolute Value</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass Natural Logarithm -->
+  <rdf:Description rdf:about="http://example.org#NaturalLogarithm">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Natural Logarithm</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Property for number values -->
+  <rdf:Description rdf:about="http://example.org#hasNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org#Operation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+
+  <!-- Property for result -->
+  <rdf:Description rdf:about="http://example.org#hasResult">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org#Operation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+</rdf:RDF>
